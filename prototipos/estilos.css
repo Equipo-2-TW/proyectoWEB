@@ -1,10 +1,18 @@
+:root{
+    --azul: #102f44;
+    --azul-claro: #9BB7C9;
+    --cafe: #7D4900;
+    --cafe-claro: #FAD4A0;
+    --cafe-hover: #FFB042;
+}
 body{
-    background: #2C4251;
     min-height: 100vh;
     margin: 0;
     font-size: 20px;
+    font-family: sans-serif;
 }
 .header{
+    background: var(--azul);
     display: flex;
     flex-direction: column;
 }
@@ -13,27 +21,28 @@ body{
     align-items: center;
 }
 .navegacion{
-    background: #523A30;
+    background: var(--cafe);
     display: flex;
     justify-content: space-evenly;
     padding: 2px 0 2px 0;
 }
 .navegacion>div{
-    background: #F7E49C;
+    background: var(--cafe-claro);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
 }
 .logo{
-    background: brown;
-    color: white;
+    background: var(--azul-claro);
+    color: black;
     padding: 10px;
-    box-shadow: 0 0 0 2px inset tomato;
+    box-shadow: 0 0 0 4px inset var(--azul);
 }
 .titulo{
     padding-left: 20px;
     color: white;
+    font-weight: bold;
 }
 .content{
     height: calc(100vh - 90px);
@@ -44,11 +53,12 @@ body{
     background: white;
 }
 .login{
-    background: #88b1ad;
+    background: var(--azul-claro);
     width: 20%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items:  center;
 }
 .login form{
@@ -71,7 +81,7 @@ body{
     flex-direction: column-reverse;
 }
 .footer{
-    background: #111;
+    background: var(--azul);
     padding:5px;
     color: white;
 }
@@ -83,7 +93,7 @@ body{
     left: 0;
 }
 .subtemas>div{
-    background: #a6d5e5;
+    background: var(--cafe-claro);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -93,15 +103,12 @@ body{
 .navegacion>div:hover .subtemas{
     display: block;
 }
-.navegacion>div:hover{
-    background: darkseagreen;
-}
-.navegacion>div .subtemas>div:hover{
-    background: darkseagreen;
+.navegacion>div:hover,.navegacion>div .subtemas>div:hover{
+    background: var(--cafe-hover);
 }
 input[type='submit']{
     cursor: pointer;
-    background: #0c3f40;
+    background: var(--azul);
     border: none;
     color: white;
     padding: 9px;
