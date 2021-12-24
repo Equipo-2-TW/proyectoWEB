@@ -1,0 +1,109 @@
+body{
+    background: #2C4251;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.navegacion{
+    background: #523A30;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 0 2px 0;
+}
+.navegacion>div{
+    background: #F7E49C;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.logo{
+    background: brown;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 0 0 2px inset tomato;
+}
+.titulo{
+    padding-left: 20px;
+    color: white;
+}
+.content{
+    height: calc(100vh - 90px);
+    display: flex;
+}
+.area{
+    width: 80%;
+    background: white;
+}
+.login{
+    background: #88b1ad;
+    width: 20%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.login form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+.links{
+    margin-top:80px;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    color: black;
+}
+.area{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer{
+    background: #111;
+    padding:5px;
+    color: white;
+}
+.subtemas{
+    display: none;
+    background: transparent;
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+.subtemas>div{
+    background: #a6d5e5;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 0 0 1px black;
+}
+.navegacion>div:hover .subtemas{
+    display: block;
+}
+.navegacion>div:hover{
+    background: darkseagreen;
+}
+.navegacion>div .subtemas>div:hover{
+    background: darkseagreen;
+}
+input[type='submit']{
+    cursor: pointer;
+    background: #0c3f40;
+    border: none;
+    color: white;
+    padding: 9px;
+    border-radius: 4px;
+}
