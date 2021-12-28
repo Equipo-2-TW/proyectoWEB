@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> <!--etiqueta de estructura básica encabezado del html-->
+    <title>No registrado</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Equipo 2">
+    <meta name="description" content="vista usuario no registrado">
+    <meta name="keywords" content="HTML, vista">
+    <meta name="copyright" content="© Equipo2">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+        <div class="logo">
+            logo
+        </div> 
+        <div class="titulo">
+            titulo del proyecto
+        </div> 
+        </div> 
+        <div class="navegacion">
+            <div>Principal</div>
+            <div>Acerca de</div>
+            <div>Preguntas frecuentes</div>
+            <div>Contacto</div>
+            <div>Ayuda</div>
+        </div> 
+    </div> 
+    <div class="content">
+        <div class="area">
+            <div class="footer">
+                Copyright 2021 Equipo 2 | Todos los derechos reservados
+            </div>
+        </div> 
+        <div class="login">
+            Inicio de sesión
+            <form>
+                Usuario
+                <input type="text"/>
+                Contraseña
+                <input type="text"/>
+                <input type="submit" value="aceptar">
+            </form>
+            <div class="links">
+                <a href="">registrarse</a>
+                <a href="">se te olvidó la contraseña</a>
+            </div> 
+        </div> 
+    </div> 
+</body>
+</html>
