@@ -1,0 +1,116 @@
+:root{
+    --azul: #102f44;
+    --azul-claro: #9BB7C9;
+    --cafe: #7D4900;
+    --cafe-claro: #FAD4A0;
+    --cafe-hover: #FFB042;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.header{
+    background: var(--azul);
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.navegacion{
+    background: var(--cafe);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 0 2px 0;
+}
+.navegacion>div{
+    background: var(--cafe-claro);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.logo{
+    background: var(--azul-claro);
+    color: black;
+    padding: 10px;
+    box-shadow: 0 0 0 4px inset var(--azul);
+}
+.titulo{
+    padding-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+.content{
+    height: calc(100vh - 90px);
+    display: flex;
+}
+.area{
+    width: 80%;
+    background: white;
+}
+.login{
+    background: var(--azul-claro);
+    width: 20%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+}
+.login form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+.links{
+    margin-top:80px;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    color: black;
+}
+.area{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer{
+    background: var(--azul);
+    padding:5px;
+    color: white;
+}
+.subtemas{
+    display: none;
+    background: transparent;
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+.subtemas>div{
+    background: var(--cafe-claro);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 0 0 1px black;
+}
+.navegacion>div:hover .subtemas{
+    display: block;
+}
+.navegacion>div:hover,.navegacion>div .subtemas>div:hover{
+    background: var(--cafe-hover);
+}
+input[type='submit']{
+    cursor: pointer;
+    background: var(--azul);
+    border: none;
+    color: white;
+    padding: 9px;
+    border-radius: 4px;
+}
