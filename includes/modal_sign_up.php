@@ -1,4 +1,4 @@
-<div id="modal" class="modal active">
+<div id="modal" class="modal">
     <div id="card" class="card">
         <div id="title">Registrar Usuario</div>
         <form>
