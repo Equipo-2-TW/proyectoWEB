@@ -18,5 +18,6 @@
     </div>
     <?php require_once "includes/login.php";?>
 </div>
+<?php require_once "includes/modal_sign_up.php";?>
 </body>
 </html>
