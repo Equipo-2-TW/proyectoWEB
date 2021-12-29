@@ -9,6 +9,7 @@
             require_once "admin.php";
             break;
         case "docente":
+            require_once "educator.php";
             break;
         case "alumno":
             break;
