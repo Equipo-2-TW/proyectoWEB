@@ -6,6 +6,7 @@
     }
     switch ($_SESSION['user']) {
         case "admin":
+            require_once "admin.php";
             break;
         case "docente":
             break;
