@@ -61,8 +61,12 @@ body{
     justify-content: center;
     align-items:  center;
 }
+.login .title{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
 .login form{
-    height: 200px;
+    height: 210px;
     display: flex;
     flex-direction: column;
     align-items:  center;
@@ -113,6 +117,7 @@ input[type='submit']{
     color: white;
     padding: 9px;
     border-radius: 4px;
+    font-size: 15px;
 }
 .modal{
     display: flex;
@@ -155,4 +160,8 @@ input[type='submit']{
     width: 100%;
     padding: 15px 0;
     text-align: center;
+}
+#user{
+    font-size: 20px;
+    margin: 10px 0;
 }
