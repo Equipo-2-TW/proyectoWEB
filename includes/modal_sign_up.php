@@ -1,6 +1,6 @@
 <div id="modal" class="modal">
     <div id="card" class="card">
-        <form>
+        <form method="post" action="sign_up.php">
             <div id="title">Registrar:
                 <select name="user" class="user">
                     <option value="admin">Administrador</option>
