@@ -12,6 +12,7 @@
             require_once "educator.php";
             break;
         case "alumno":
+            require_once "student.php";
             break;
     }
 ?>
