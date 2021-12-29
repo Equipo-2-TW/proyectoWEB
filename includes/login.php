@@ -5,7 +5,7 @@
         <input type="text"/>
         Contraseña
         <input type="password"/>
-        <select name="user" id="user">
+        <select name="user" class="user">
             <option value="admin">Administrador</option>
             <option value="docente">Docente</option>
             <option value="alumno">Alumno</option>
