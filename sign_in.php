@@ -24,6 +24,7 @@ if (isset($_POST["login"])) {
         }
         $count = mysqli_num_rows($result);
         if($count >= 1) {
+            $_SESSION['user'] = $user;
             header("Location: index.php");
         }
     }
