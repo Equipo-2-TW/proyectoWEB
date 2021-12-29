@@ -12,9 +12,7 @@
 </div> <!-- close header -->
 <div class="content">
     <div class="area">
-        <div class="footer">
-            Copyright 2021 Equipo 2 | Todos los derechos reservados
-        </div>
+        <?php require_once "includes/footer_message.php";?>
     </div>
     <?php require_once "includes/login.php";?>
 </div>
