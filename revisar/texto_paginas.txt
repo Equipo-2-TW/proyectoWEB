@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////////////////
+Bienvenido.
+
+El <b>Equipo 2</b> presenta su proyecto final para la materia de Tecnolog&iacute;a Web del semestre 2022/1 a cargo de la profesora Garbiela de Jesús López Ruiz.
+
+Ante la situaci&oacute;n de COVID los docentes han reccurrido a m&uacute;ltiples plataformas que permitan la catedra de clases asimilando la presencia en la escuela. Esta aplicación permite la interacción de un aula de clases mediante plataformas web, registrando <b>alumnos y docentes, gestionados por un administrador</b>; los docentes subirán su contenido al sitio donde sus alumnos registrados lo podrán visualizar, interactuar con la p&aactue;gina y hacer entrega de sus actividades.
+
+
+ACERCA DE //////////////////////////////////////////////////////////////////////
+
+El equipo se conforma por los integrantes:
+    <ul>
+        <li>Cisneros Gonzalez Miguel Angel</li>
+        <li>Estrada Borja Frida Fernanda</li>
+        <li>Flores Gutierrez Brayan</li>
+        <li>Franco Hernández Victor Alfonso</li>
+        <li>Garcia Gamiño Rafael Julian</li>
+        <li>Sanchez Olvera Odra Andrea</li>      
+    </ul>
+
+PREGUNTAS FRECUENTES////////////////////////////////////////////////////////////
+    Navegación de la pagina web
