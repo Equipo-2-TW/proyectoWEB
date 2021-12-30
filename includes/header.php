@@ -8,6 +8,10 @@
     <meta name="keywords" content="HTML, vista">
     <meta name="copyright" content="© Equipo2">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modal_sign_up.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="header">

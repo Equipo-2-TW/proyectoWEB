@@ -1,0 +1,41 @@
+.navegacion{
+    background: var(--cafe);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 0 2px 0;
+}
+.navegacion>div{
+    background: var(--cafe-claro);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.navegacion>div>a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.navegacion .subtemas{
+    display: none;
+    background: transparent;
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+.navegacion .subtemas>div{
+    background: var(--cafe-claro);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 0 0 1px black;
+}
+.navegacion>div:hover .subtemas{
+    display: block;
+}
+.navegacion>div:hover,.navegacion>div .subtemas>div:hover{
+    background: var(--cafe-hover);
+}

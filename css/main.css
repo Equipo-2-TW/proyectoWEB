@@ -1,0 +1,60 @@
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+.main>div:first-child{
+    margin-top: 30px;
+}
+.main::-webkit-scrollbar{
+    width: 15px;
+}
+.main::-webkit-scrollbar-track{
+    background: lavender;
+    box-shadow: 0 0 0 1px inset;
+    border-radius: 10px;
+    margin-block: 10px;
+}
+.main::-webkit-scrollbar-thumb{
+    background: var(--azul);
+    border-radius: 10px;
+}
+.main .info{
+    width: 80%;
+    background: lavender;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 0 1px;
+    margin-bottom: 30px;
+}
+.main .info .title{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.main .info .description.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .info li::marker{
+    color: var(--azul);
+    content: "▶";
+}
+.main .info li{
+    padding-left: 10px;
+}
+.main .info li:hover::marker{
+    color: var(--cafe);
+}
+.main .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .contact input[type="submit"]{
+    margin-right: 15px;
+}
