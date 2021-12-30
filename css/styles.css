@@ -234,3 +234,30 @@ input[type='reset']{
 .contact input[type="submit"]{
     margin-right: 15px;
 }
+.info li::marker{
+    color: var(--azul);
+    content: "▶";
+}
+.info li{
+    padding-left: 10px;
+}
+.info li:hover::marker{
+    color: var(--cafe);
+}
+::selection{
+  background: black;
+  color: white;
+}
+.main::-webkit-scrollbar{
+    width: 15px;
+}
+.main::-webkit-scrollbar-track{
+    background: lavender;
+    box-shadow: 0 0 0 1px inset;
+    border-radius: 10px;
+    margin-block: 10px;
+}
+.main::-webkit-scrollbar-thumb{
+    background: var(--azul);
+    border-radius: 10px;
+}
