@@ -8,6 +8,9 @@
             case "about":
                 require_once "includes/about.php";
                 break;
+            case "contact":
+                require_once "includes/contact.php";
+                break;
         }
     ?>
 </div>

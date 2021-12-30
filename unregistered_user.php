@@ -6,7 +6,7 @@
         <div><a href="index.php">Principal</a></div>
         <div><a href="index.php?page=about">Acerca de</a></div>
         <div>Preguntas frecuentes</div>
-        <div>Contacto</div>
+        <div><a href="index.php?page=contact">Contacto</a></div>
         <div>Ayuda</div>
     </div>
 </div> <!-- close header -->
