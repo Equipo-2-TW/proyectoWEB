@@ -28,10 +28,17 @@ body{
 }
 .navegacion>div{
     background: var(--cafe-claro);
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
+    display: grid;
+    place-items: center;
+}
+.navegacion>div>a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 .logo{
     background: var(--azul-claro);

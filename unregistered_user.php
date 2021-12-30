@@ -3,8 +3,8 @@
     require_once "includes/header.php";
 ?>
     <div class="navegacion">
-        <div>Principal</div>
-        <div>Acerca de</div>
+        <div><a href="index.php">Principal</a></div>
+        <div><a href="index.php?page=about">Acerca de</a></div>
         <div>Preguntas frecuentes</div>
         <div>Contacto</div>
         <div>Ayuda</div>
