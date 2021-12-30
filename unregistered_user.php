@@ -13,6 +13,7 @@
 <div class="content">
     <div class="area">
         <?php require_once "includes/footer_message.php";?>
+        <?php require_once "includes/main.php";?>
     </div>
     <?php require_once "includes/login.php";?>
 </div>

@@ -181,3 +181,31 @@ input[type='submit']{
     text-align: center;
     width: 85%;
 }
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+.main>div:first-child{
+    margin-top: 30px;
+}
+.info{
+    width: 80%;
+    background: lavender;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 0 1px;
+}
+.info .title{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.info .description.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
