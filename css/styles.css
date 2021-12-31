@@ -1,9 +1,11 @@
 :root{
     --azul: #102f44;
     --azul-claro: #9BB7C9;
+    --azul-hover: #00111C;
     --cafe: #7D4900;
     --cafe-claro: #FAD4A0;
     --cafe-hover: #FFB042;
+    --reset-hover: #DDD;
 }
 body{
     min-height: 100vh;
@@ -38,8 +40,6 @@ body{
 .area{
     width: 80%;
     background: white;
-}
-.area{
     display: flex;
     flex-direction: column-reverse;
 }
@@ -48,7 +48,7 @@ body{
     padding:5px;
     color: white;
 }
-input[type='submit']{
+input[type='submit'],input[type='reset']{
     cursor: pointer;
     background: var(--azul);
     border: none;
@@ -56,15 +56,18 @@ input[type='submit']{
     padding: 9px;
     border-radius: 4px;
     font-size: 15px;
+    transition: all 0.2s;
+}
+input[type='submit']:hover{
+    background: var(--azul-hover);
 }
 input[type='reset']{
-    cursor: pointer;
     background: white;
-    border: none;
-    padding: 9px;
-    border-radius: 4px;
-    font-size: 15px;
+    color: black;
     box-shadow: 0 0 0 1px inset;
+}
+input[type='reset']:hover{
+    background: var(--reset-hover);
 }
 ::selection{
   background: black;

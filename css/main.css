@@ -21,8 +21,12 @@
     background: var(--azul);
     border-radius: 10px;
 }
+.main::-webkit-scrollbar-thumb:hover{
+    background: var(--azul-hover);
+}
 .main .info{
     width: 80%;
+    max-width: 700px;
     background: lavender;
     box-sizing: border-box;
     padding: 20px;
