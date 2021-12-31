@@ -62,3 +62,32 @@
 .main .contact input[type="submit"]{
     margin-right: 15px;
 }
+.main .faq div{
+    display: none;
+    width: 80%;
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 1px inset;
+}
+.main .faq input[type="checkbox"]{
+    display: none;
+}
+.main .faq input[type="checkbox"]:checked + label + div{
+    display: block;
+}
+.main .faq label{
+    width: 60%;
+    background: var(--azul);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px inset black;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.main .faq label:hover, .main .faq input[type="checkbox"]:checked + label{
+    background: var(--azul-hover);
+}

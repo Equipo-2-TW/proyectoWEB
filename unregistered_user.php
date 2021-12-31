@@ -5,7 +5,7 @@
     <div class="navegacion">
         <div><a href="index.php">Principal</a></div>
         <div><a href="index.php?page=about">Acerca de</a></div>
-        <div>Preguntas frecuentes</div>
+        <div><a href="index.php?page=faq">Preguntas frecuentes</a></div>
         <div><a href="index.php?page=contact">Contacto</a></div>
         <div>Ayuda</div>
     </div>

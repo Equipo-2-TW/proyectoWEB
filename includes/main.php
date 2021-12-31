@@ -11,6 +11,9 @@
             case "contact":
                 require_once "includes/contact.php";
                 break;
+            case "faq":
+                require_once "includes/faq.php";
+                break;
         }
     ?>
 </div>
