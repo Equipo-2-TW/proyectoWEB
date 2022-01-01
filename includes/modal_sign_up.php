@@ -15,6 +15,21 @@
                 <input type="text" name="name" id="name"/>
                 <label for="group" id="groupl">Grupo:</label>
                 <input type="text" name="group" id="group"/>
+                <select name="group_list" id="group_list">
+                    <?php
+                    $query = "SELECT * FROM docente";
+                    $result = mysqli_query($conn, $query);
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_assoc($result)) {
+                    ?>
+
+                    <option value="<?=$row['doc_grupo']?>"><?=$row['doc_grupo']?></option>
+
+                    <?php
+                        }
+                    }
+                    ?>
+                </select>
                 <label for="email">Correo Principal:</label>
                 <input type="text" name="email" id="email"/>
                 <label for="email2">Correo Alternativo:</label>

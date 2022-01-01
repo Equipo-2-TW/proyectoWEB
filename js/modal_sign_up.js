@@ -5,10 +5,12 @@ const select = document.querySelector("#select_user_sign_up")
 const group  = document.querySelector("#group")
 const groupl = document.querySelector("#groupl")
 const idl    = document.querySelector("#idl")
+const list   = document.querySelector("#group_list")
 
 const update_fields = () => {
-    group.classList.toggle("admin", select.value == "admin")
+    group.classList.toggle("admin", select.value != "docente")
     groupl.classList.toggle("admin", select.value == "admin")
+    list.classList.toggle("admin", select.value != "alumno")
     idl.innerHTML = `Numero de ${select.value == "alumno" ? "boleta:" : "empleado:"}`
 }
 

@@ -7,6 +7,7 @@ if (isset($_POST["sign_up"])) {
     $id     = $_POST["id"];
     $name   = $_POST["name"];
     $group  = $_POST["group"];
+    $groupl = $_POST["group_list"];
     $email  = $_POST["email"];
     $email2 = $_POST["email2"];
     $phone  = $_POST["phone"];
@@ -22,7 +23,7 @@ if (isset($_POST["sign_up"])) {
             break;
         case "alumno":
             $query = "INSERT INTO alumno(alum_boleta, alum_nombre, alum_grupo, alum_correoP, alum_correoA, alum_telefono, alum_contras)";
-            $query .= " VALUES ('$id', '$name', '$group', '$email', '$email2', '$phone', '$pwd')";
+            $query .= " VALUES ('$id', '$name', '$groupl', '$email', '$email2', '$phone', '$pwd')";
             break;
     }
     if (isset($query)) {

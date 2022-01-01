@@ -51,3 +51,6 @@
 .modal .admin{
     display: none;
 }
+.modal #group_list{
+    font-size: 18px;
+}
