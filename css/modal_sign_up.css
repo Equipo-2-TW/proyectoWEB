@@ -9,7 +9,7 @@
     z-index: -1;
 }
 .modal .card{
-    width: 500px;
+    width: 510px;
     max-width: 80%;
     background: var(--azul-claro);
     position: relative;
@@ -25,9 +25,9 @@
 }
 .modal .card .fields{
     display: grid;
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1fr 1fr;
     box-sizing: border-box;
-    gap: 20px;
+    gap: 12px;
     margin: 15px;
     align-items: center;
 }

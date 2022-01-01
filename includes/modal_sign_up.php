@@ -9,12 +9,18 @@
                 </select>
             </div>
             <div class="fields">
+                <label for="id" id="idl">Numero de empleado:</label>
+                <input type="text" name="id" id="id"/>
                 <label for="name">Nombre:</label>
                 <input type="text" name="name" id="name"/>
-                <label for="email">Correo:</label>
+                <label for="group" id="groupl">Grupo:</label>
+                <input type="text" name="group" id="group"/>
+                <label for="email">Correo Principal:</label>
                 <input type="text" name="email" id="email"/>
-                <label for="email2" id="email2l">Correo Opcional:</label>
+                <label for="email2">Correo Alternativo:</label>
                 <input type="text" name="email2" id="email2"/>
+                <label for="phone">Telefono:</label>
+                <input type="text" name="phone" id="phone"/>
                 <label for="password">Contraseña:</label>
                 <input type="password" name="password" id="password"/>
                 <input type="submit" name="sign_up" value="ENVIAR"/>
