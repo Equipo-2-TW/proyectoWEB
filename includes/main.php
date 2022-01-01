@@ -1,23 +1,13 @@
 <div class="main">
     <?php
         $page = $_GET['page'];
-        if (!isset($_SESSION['user']))
+        if (in_array($page, $allowed_pages))
             switch ($page) {
-                case "about":   require_once "includes/about.php";   break;
-                case "contact": require_once "includes/contact.php"; break;
-                case "faq":     require_once "includes/faq.php";     break;
-                default:        require_once "includes/welcome.php"; break;
+                case "about":      require_once "includes/about.php";         break;
+                case "contact":    require_once "includes/contact.php";       break;
+                case "faq":        require_once "includes/faq.php";           break;
+                case "mng_themes": require_once "includes/manage_themes.php"; break;
             }
-        switch ($_SESSION['user']) {
-            case "admin":
-                break;
-            case "docente":
-                switch ($page) {
-                    case "mng_themes":   require_once "includes/manage_themes.php";   break;
-                }
-                break;
-            case "alumno":
-                break;
-        }
+        else if (!isset($_SESSION['user'])) require_once "includes/welcome.php";
     ?>
 </div>
