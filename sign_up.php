@@ -4,22 +4,25 @@ require_once "db_connection.php";
 
 if (isset($_POST["sign_up"])) {
     $user   = $_POST["user"];
+    $id     = $_POST["id"];
     $name   = $_POST["name"];
+    $group  = $_POST["group"];
     $email  = $_POST["email"];
     $email2 = $_POST["email2"];
+    $phone  = $_POST["phone"];
     $pwd    = $_POST["password"];
     switch ($user) {
         case "admin":
-            $query = "INSERT INTO administrador(admin_id, admin_nombre, admin_correo, admin_contras)";
-            $query .= " VALUES (NULL, '$name', '$email', '$pwd')";
+            $query = "INSERT INTO administrador(admin_numempleado, admin_nombre, admin_correoP, admin_correoA, admin_telefono, admin_contras)";
+            $query .= " VALUES ('$id', '$name', '$email', '$email2', '$phone', '$pwd')";
             break;
         case "docente":
-            $query = "INSERT INTO alumno(alum_id, alum_nombre, alum_correo, alum_correop, alum_contras)";
-            $query .= " VALUES (NULL, '$name', '$email', '$email2', '$pwd')";
+            $query = "INSERT INTO docente(doc_numempleado, doc_nombre, doc_grupo, doc_correoP, doc_correoA, doc_telefono, doc_contras)";
+            $query .= " VALUES ('$id', '$name', '$group', '$email', '$email2', '$phone', '$pwd')";
             break;
         case "alumno":
-            $query = "INSERT INTO docente(doc_id, doc_nombre, doc_correo, doc_correop, doc_contras)";
-            $query .= " VALUES (NULL, '$name', '$email', '$email2', '$pwd')";
+            $query = "INSERT INTO alumno(alum_boleta, alum_nombre, alum_grupo, alum_correoP, alum_correoA, alum_telefono, alum_contras)";
+            $query .= " VALUES ('$id', '$name', '$group', '$email', '$email2', '$phone', '$pwd')";
             break;
     }
     if (isset($query)) {
