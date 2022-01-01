@@ -91,3 +91,16 @@
 .main .faq label:hover, .main .faq input[type="checkbox"]:checked + label{
     background: var(--azul-hover);
 }
+.main .manage_themes form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    margin: 10px 0;
+}
+.main .manage_themes form input[type="submit"]{
+    grid-column: 2 span;
+}
+.main .manage_themes form :is(input[type="file"],input[type="text"],input[type="submit"],select){
+    font-size: 18px;
+}
