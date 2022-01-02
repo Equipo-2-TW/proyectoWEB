@@ -12,7 +12,7 @@
     display: grid;
     place-items: center;
 }
-.navegacion>div>a{
+.navegacion>div>a, .navegacion .subtemas>div>a{
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -27,7 +27,6 @@
 }
 .navegacion .subtemas>div{
     background: var(--cafe-claro);
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;

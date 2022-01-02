@@ -22,6 +22,7 @@
             require_once "educator.php";
             break;
         case "alumno":
+            $allowed_pages = array("materials");
             require_once "student.php";
             break;
     }

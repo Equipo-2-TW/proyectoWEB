@@ -7,6 +7,7 @@
                 case "contact":    require_once "includes/contact.php";       break;
                 case "faq":        require_once "includes/faq.php";           break;
                 case "mng_themes": require_once "includes/manage_themes.php"; break;
+                case "materials":  require_once "includes/materials.php";     break;
             }
         else if (!isset($_SESSION['user'])) require_once "includes/welcome.php";
     ?>

@@ -104,3 +104,37 @@
 .main .manage_themes form :is(input[type="file"],input[type="text"],input[type="submit"],select){
     font-size: 18px;
 }
+.main .materials{
+    width: 80%;
+    max-width: 460px;
+}
+.main .materials .material{
+    background: lavender;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    box-shadow: 0 0 0 1px inset;
+}
+.main .material a{
+    color: darkblue;
+    font-weight: bold;
+}
+.main .material a::after{
+    content: "🡇";
+    color: var(--azul-hover);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px inset var(--azul), 0 0 0 1px white, 0 0 0 3px var(--azul);
+}
+.main .material a:hover::after{
+    color: white;
+    background: var(--azul-hover);
+    box-shadow: 0 0 0 2px inset white, 0 0 0 1px var(--azul), 0 0 0 3px white;
+}
