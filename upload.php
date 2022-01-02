@@ -12,7 +12,7 @@ if (isset($_POST["upload"])) {
 
     $name_exploded = explode(".",$filename);
     $new_filename  = $name_exploded[0].rand(0,1000).".$name_exploded[1]";
-    move_uploaded_file($tempname,'files/'.$filename);
+    move_uploaded_file($tempname,'files/'.$new_filename);
 
     $query = "INSERT INTO material(mat_id, mat_bloque, mat_tema, mat_subtema, mat_tipomaterial, mat_actividad)";
     $query .= " VALUES (NULL, '$unit', '$topic', '$subtopic', '$type', '$new_filename')";
