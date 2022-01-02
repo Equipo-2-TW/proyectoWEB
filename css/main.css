@@ -219,6 +219,12 @@ div.main .manage_users{
         overflow: none;
         font-size: 5px;
     }
+    .main .manage_users .table{
+        transform: translateX(25px);
+    }
+    .main .manage_users .table>div:nth-child(8n){
+        visibility: hidden;
+    }
 }
 .main .table .options a{
     margin: 0 8px;
