@@ -19,6 +19,7 @@
             <div>Teléfono</div>
             <div>Boleta empleado</div>
             <div>Contraseña</div>
+            <div>Opciones</div>
             <?php
             if ($type == "admin" || $type == "all") {
                 $query    = "SELECT * FROM administrador";
@@ -33,6 +34,9 @@
             <div><?=$row['admin_telefono']?></div>
             <div><?=$row['admin_numempleado']?></div>
             <div><?=$row['admin_contras']?></div>
+            <div class="options">
+                <span>🖉</span><span>🗑</span>
+            </div>
             <?php
                     }
                 }
@@ -50,6 +54,9 @@
             <div><?=$row['doc_telefono']?></div>
             <div><?=$row['doc_numempleado']?></div>
             <div><?=$row['doc_contras']?></div>
+            <div class="options">
+                <span>🖉</span><span>🗑</span>
+            </div>
             <?php
                     }
                 }
@@ -67,6 +74,9 @@
             <div><?=$row['alum_telefono']?></div>
             <div><?=$row['alum_boleta']?></div>
             <div><?=$row['alum_contras']?></div>
+            <div class="options">
+                <span>🖉</span><span>🗑</span>
+            </div>
             <?php
                     }
                 }
