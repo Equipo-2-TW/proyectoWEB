@@ -1,7 +1,7 @@
 <div class="info">
     <div class="title">Subir materiales</div>
     <div class="description center manage_themes">
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" action="upload.php" enctype="multipart/form-data">
             <label for="unit">Bloque:</label>
             <input type="text" name="unit" id="unit"/>
             <label for="topic">Tema:</label>

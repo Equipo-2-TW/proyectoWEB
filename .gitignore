@@ -1,4 +1,6 @@
 # PHP files
 db_config.php
+# uploaded files
+files/
 # Editor files
 *.swp
