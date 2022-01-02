@@ -190,3 +190,30 @@ div.main .manage_users{
     place-items: center;
     box-shadow: 0 0 0 1px inset;
 }
+.main .footer_ input[type="button"]{
+    box-sizing: border-box;
+    font-size: 20px;
+    background: var(--cafe-claro);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px inset;
+}
+.main .footer_ input[type="button"]:hover{
+    background: var(--cafe-hover);
+}
+@media print{
+    body{
+        visibility: hidden;
+    }
+    .main .content_{
+        visibility: visible;
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: none;
+        font-size: 10px;
+    }
+}

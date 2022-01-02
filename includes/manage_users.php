@@ -75,5 +75,6 @@
         </div>
     </div>
     <div class="footer_">
+        <input type="button" onclick="window.print()" value="Imprimir"/>
     </div>
 </div>
