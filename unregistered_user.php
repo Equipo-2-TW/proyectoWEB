@@ -3,11 +3,19 @@
     require_once "includes/header.php";
 ?>
     <div class="navegacion">
-        <div><a href="index.php">Principal</a></div>
-        <div><a href="index.php?page=about">Acerca de</a></div>
-        <div><a href="index.php?page=faq">Preguntas frecuentes</a></div>
-        <div><a href="index.php?page=contact">Contacto</a></div>
-        <div>Ayuda</div>
+        <div class=<?=checked("")?>>
+            <a href="index.php">Principal</a>
+        </div>
+        <div class=<?=checked("about")?>>
+            <a href="index.php?page=about">Acerca de</a>
+        </div>
+        <div class=<?=checked("faq")?>>
+            <a href="index.php?page=faq">Preguntas frecuentes</a>
+        </div>
+        <div class=<?=checked("contact")?>>
+            <a href="index.php?page=contact">Contacto</a>
+        </div>
+        <div class="">Ayuda</div>
     </div>
 </div> <!-- close header -->
 <div class="content">

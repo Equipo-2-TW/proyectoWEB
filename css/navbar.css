@@ -39,3 +39,6 @@
 .navegacion>div:hover,.navegacion>div .subtemas>div:hover{
     background: var(--cafe-hover);
 }
+.navegacion .checked{
+    background: var(--cafe-hover);
+}
