@@ -7,13 +7,13 @@
             <a href="index.php">Principal</a>
         </div>
         <div class=<?=checked("about")?>>
-            <a href="index.php?page=about">Acerca de</a>
+            <a href="?page=about">Acerca de</a>
         </div>
         <div class=<?=checked("faq")?>>
-            <a href="index.php?page=faq">Preguntas frecuentes</a>
+            <a href="?page=faq">Preguntas frecuentes</a>
         </div>
         <div class=<?=checked("contact")?>>
-            <a href="index.php?page=contact">Contacto</a>
+            <a href="?page=contact">Contacto</a>
         </div>
         <div class="">Ayuda</div>
     </div>

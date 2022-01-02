@@ -10,11 +10,11 @@
         <div class=<?=checked("materials")?>>
             <a>Tipo de material</a>
             <div class="subtemas">
-                <div><a href="index.php?page=materials&type=video">Video</a></div>
-                <div><a href="index.php?page=materials&type=material">Material</a></div>
-                <div><a href="index.php?page=materials&type=imprimible">Imprimible</a></div>
-                <div><a href="index.php?page=materials&type=actividad">Actividad</a></div>
-                <div><a href="index.php?page=materials&type=examen">Examen</a></div>
+                <div><a href="?page=materials&type=video">Video</a></div>
+                <div><a href="?page=materials&type=material">Material</a></div>
+                <div><a href="?page=materials&type=imprimible">Imprimible</a></div>
+                <div><a href="?page=materials&type=actividad">Actividad</a></div>
+                <div><a href="?page=materials&type=examen">Examen</a></div>
             </div>
         </div>
         <div>Soporte</div>

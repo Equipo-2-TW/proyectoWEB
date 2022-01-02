@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class=<?=checked("mng_themes")?>>
-            <a href="index.php?page=mng_themes">Gestionar Temas</a>
+            <a href="?page=mng_themes">Gestionar Temas</a>
         </div>
         <div>Actualización de perfil</div>
         <div>Contraseña</div>
