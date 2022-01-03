@@ -4,6 +4,7 @@ require_once "db_connection.php";
 
 if (isset($_POST["update"])) {
     $user   = $_POST["user"];
+    $id     = $_POST["id"];
     $type   = $_POST["type"];
     $name   = $_POST["name"];
     $email  = $_POST["email"];
