@@ -51,12 +51,9 @@
     padding: 15px 0;
     text-align: center;
 }
-.modal .admin{
+.modal .admin,.modal .hidden{
     display: none;
 }
 .modal #group_list{
     font-size: 18px;
-}
-.modal #aux{
-    display: none;
 }

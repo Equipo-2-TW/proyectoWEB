@@ -39,20 +39,18 @@ if($action == "edit") {
             $pwd    = $row["alum_contras"];
             break;
     }
-    if (!$result) {
-        die("Query Failed");
-    }
-    header("Location: $url");
+    if (!$result) die("Query Failed");
 }
 ?>
 <div id="editor_modal" class="modal <?=$action == "edit" ? "active" : ""?>">
     <div id="editor_card" class="card">
-        <form method="post" action="sign_up.php">
+        <form method="post" action="update.php">
             <div id="title">Editar</div>
             <div class="fields">
-                <input name="user" id="aux" value="<?=$user?>">
+                <input name="user" class="hidden" value="<?=$user?>"/>
+                <input name="type" class="hidden" value="<?=$type?>"/>
                 <label for="id_">Numero de empleado:</label>
-                <input type="text" name="id" id="id_" value="<?=$id?>"/>
+                <input type="text" name="id" id="id_" value="<?=$id?>" readonly/>
                 <label for="name_">Nombre:</label>
                 <input type="text" name="name" id="name_" value="<?=$name?>"/>
                 <label for="email_">Correo Principal:</label>
@@ -63,7 +61,7 @@ if($action == "edit") {
                 <input type="text" name="phone" id="phone_" value="<?=$phone?>"/>
                 <label for="password_">Contraseña:</label>
                 <input type="password" name="password" id="password_" value="<?=$pwd?>"/>
-                <input type="submit" name="sign_up" value="ENVIAR"/>
+                <input type="submit" name="update" value="ENVIAR"/>
             </div>
         </form>
     </div>
