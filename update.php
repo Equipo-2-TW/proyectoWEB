@@ -2,7 +2,7 @@
 
 require_once "db_connection.php";
 
-if (isset($_POST["update"])) {
+if (isset($_POST["update"]) || isset($_POST["update_profile"])) {
     $user   = $_POST["user"];
     $id     = $_POST["id"];
     $type   = $_POST["type"];
@@ -27,10 +27,11 @@ if (isset($_POST["update"])) {
     }
     if (isset($query)) {
         $result = mysqli_query($conn, $query);
-        if (!$result) {
-            die("Query Failed");
-        }
-        header("Location: index.php?page=mng_users&type=$type");
+        if (!$result) die("Query Failed");
+        if(isset($_POST["update_profile"]))
+            header("Location: index.php?page=u_user");
+        else
+            header("Location: index.php?page=mng_users&type=$type");
     }
 }
 ?>

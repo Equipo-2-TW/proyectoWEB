@@ -1,5 +1,6 @@
 <?php
 $user  = $_SESSION['user'];
+$user  = $user == "docente" ? "educator" : $user;
 $email = $_SESSION['email'];
 switch ($user) {
     case "admin":
