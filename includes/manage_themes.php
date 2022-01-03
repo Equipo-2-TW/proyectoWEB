@@ -52,6 +52,7 @@
         <?php
         $email  = $_SESSION['email'];
         $query  = "SELECT * FROM material";
+        $query .= $user == "docente" ? " WHERE mat_grupo = '$group'" : "";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
