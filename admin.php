@@ -13,7 +13,9 @@
             </div>
         </div>
         <div>Gestionar Temas</div>
-        <div>Actualización de perfil</div>
+        <div class="<?=checked("u_user")?>">
+            <a href="?page=u_user">Actualización de perfil</a>
+        </div>
         <div>Contraseña</div>
         <div>Estadística</div>
         <div>Ayuda</div>

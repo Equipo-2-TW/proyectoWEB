@@ -15,11 +15,11 @@
     }
     switch ($_SESSION['user']) {
         case "admin":
-            $allowed_pages = array("mng_users");
+            $allowed_pages = array("mng_users","u_user");
             require_once "admin.php";
             break;
         case "docente":
-            $allowed_pages = array("mng_themes");
+            $allowed_pages = array("mng_themes","u_user");
             require_once "educator.php";
             break;
         case "alumno":

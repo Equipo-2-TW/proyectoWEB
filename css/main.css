@@ -251,3 +251,15 @@ div.main .manage_users{
 .main .table .options a:first-child:hover{
     background: darkgreen;
 }
+.main .u_user .fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+}
+.main .u_user .fields input[type="submit"]{
+    grid-column: 2 span;
+}
+.main .u_user .hidden{
+    display: none;
+}
