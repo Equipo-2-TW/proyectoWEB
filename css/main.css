@@ -114,6 +114,7 @@
 .main .materials .material{
     background: lavender;
     display: grid;
+    align-items: center;
     grid-template-columns: 150px 1fr;
     margin-bottom: 30px;
     box-sizing: border-box;
@@ -133,6 +134,7 @@
     width: 30px;
     height: 30px;
     background: white;
+    line-height: 32px;
     border-radius: 50%;
     box-shadow: 0 0 0 2px inset var(--azul), 0 0 0 1px white, 0 0 0 3px var(--azul);
 }
