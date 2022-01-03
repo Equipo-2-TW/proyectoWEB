@@ -1,7 +1,16 @@
+<?php
+$email  = $_SESSION['email'];
+$query  = "SELECT doc_grupo FROM docente WHERE doc_correoP = '$email'";
+$result = mysqli_query($conn, $query);
+if (!$result) die("Query Failed");
+$row    = mysqli_fetch_assoc($result);
+$group  = $row["doc_grupo"];
+?>
 <div class="info">
     <div class="title">Subir materiales</div>
     <div class="description center manage_themes">
         <form method="post" action="upload.php" enctype="multipart/form-data">
+            <input name="group" class="hidden" value="<?=$group?>"/>
             <label for="unit">Bloque:</label>
             <input type="text" name="unit" id="unit"/>
             <label for="topic">Tema:</label>

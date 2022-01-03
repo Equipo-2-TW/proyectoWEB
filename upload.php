@@ -3,6 +3,7 @@
 require_once "db_connection.php";
 
 if (isset($_POST["upload"])) {
+    $group    = $_POST["group"];
     $unit     = $_POST["unit"];
     $topic    = $_POST["topic"];
     $subtopic = $_POST["subtopic"];
@@ -14,8 +15,8 @@ if (isset($_POST["upload"])) {
     $new_filename  = $name_exploded[0].rand(0,1000).".$name_exploded[1]";
     move_uploaded_file($tempname,'files/'.$new_filename);
 
-    $query = "INSERT INTO material(mat_id, mat_bloque, mat_tema, mat_subtema, mat_tipomaterial, mat_actividad)";
-    $query .= " VALUES (NULL, '$unit', '$topic', '$subtopic', '$type', '$new_filename')";
+    $query = "INSERT INTO material(mat_id, mat_grupo, mat_bloque, mat_tema, mat_subtema, mat_tipomaterial, mat_actividad)";
+    $query .= " VALUES (NULL, '$group', '$unit', '$topic', '$subtopic', '$type', '$new_filename')";
     $result = mysqli_query($conn, $query);
     if (!$result) {
         die("Query Failed");

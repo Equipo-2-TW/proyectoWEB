@@ -98,6 +98,9 @@
     gap: 20px;
     margin: 10px 0;
 }
+.main .manage_themes .hidden{
+    display: none;
+}
 .main .manage_themes form input[type="submit"]{
     grid-column: 2 span;
 }
