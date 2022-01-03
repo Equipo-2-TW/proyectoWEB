@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 01-01-2022 a las 01:44:55
+-- Tiempo de generación: 03-01-2022 a las 11:03:05
 -- Versión del servidor: 8.0.27-0ubuntu0.20.04.1
 -- Versión de PHP: 7.4.3
 
@@ -105,6 +105,7 @@ CREATE TABLE `grupo` (
 
 CREATE TABLE `material` (
   `mat_id` int NOT NULL,
+  `mat_grupo` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
   `mat_bloque` varchar(1) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `mat_tema` varchar(40) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `mat_subtema` varchar(40) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
@@ -157,7 +158,8 @@ ALTER TABLE `grupo`
 -- Indices de la tabla `material`
 --
 ALTER TABLE `material`
-  ADD PRIMARY KEY (`mat_id`);
+  ADD PRIMARY KEY (`mat_id`),
+  ADD KEY `mat_grupo` (`mat_grupo`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -200,6 +202,12 @@ ALTER TABLE `grupo`
   ADD CONSTRAINT `grupo_ibfk_2` FOREIGN KEY (`grupo_docgrup`) REFERENCES `docente` (`doc_grupo`) ON DELETE RESTRICT ON UPDATE CASCADE,
   ADD CONSTRAINT `grupo_ibfk_3` FOREIGN KEY (`grupo_boleta`) REFERENCES `alumno` (`alum_boleta`) ON DELETE RESTRICT ON UPDATE CASCADE,
   ADD CONSTRAINT `grupo_ibfk_4` FOREIGN KEY (`grupo_docnum`) REFERENCES `docente` (`doc_numempleado`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `material`
+--
+ALTER TABLE `material`
+  ADD CONSTRAINT `material_ibfk_1` FOREIGN KEY (`mat_grupo`) REFERENCES `docente` (`doc_grupo`) ON DELETE RESTRICT ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
