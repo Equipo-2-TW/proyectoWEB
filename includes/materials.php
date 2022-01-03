@@ -1,7 +1,15 @@
 <div class="materials">
     <?php
+    $email  = $_SESSION['email'];
     $type   = $_GET['type'];
-    $query  = "SELECT * FROM material WHERE mat_tipomaterial='$type'";
+
+    $query  = "SELECT alum_grupo FROM alumno WHERE alum_correoP = '$email'";
+    $result = mysqli_query($conn, $query);
+    if (!$result) die("Query Failed");
+    $row    = mysqli_fetch_assoc($result);
+    $group  = $row["alum_grupo"];
+
+    $query  = "SELECT * FROM material WHERE mat_tipomaterial='$type' AND mat_grupo = '$group'";
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
