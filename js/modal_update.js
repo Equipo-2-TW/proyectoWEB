@@ -1,10 +1,12 @@
-const modal_  = document.querySelector("#editor_modal")
-const card_   = document.querySelector("#editor_card")
+const modal_  = document.querySelectorAll("#editor_modal")
+const card_   = document.querySelectorAll("#editor_card")
 
-document.body.addEventListener("click", () => {
-    modal_.classList.remove('active')
+modal_.forEach( modal => {
+    document.body.addEventListener("click", () => {
+        modal.classList.remove('active')
+    })
 })
 
-card_.addEventListener("click", e => {
-    e.stopPropagation()
+card_.forEach( card => {
+    card.addEventListener("click", e => e.stopPropagation())
 })
