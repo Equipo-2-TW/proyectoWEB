@@ -2,8 +2,17 @@
     <?php
     $email  = $_SESSION['email'];
     $user   = $_SESSION['user'];
+    $id     = $_GET["id"];
     $action = $_GET["action"];
     $url = "index.php?page=mng_themes";
+    if($action == "delete") {
+        $query = "DELETE FROM material WHERE mat_id = $id";
+        if (isset($query)) {
+            $result = mysqli_query($conn, $query);
+            if (!$result) die("Query Failed");
+            header("Location: $url");
+        }
+    }
     if ($user == "docente") {
         $query  = "SELECT doc_grupo FROM docente WHERE doc_correoP = '$email'";
         $result = mysqli_query($conn, $query);
