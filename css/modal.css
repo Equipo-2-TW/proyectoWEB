@@ -14,15 +14,17 @@
     max-width: 80%;
     background: var(--azul-claro);
     position: relative;
-    transform: translateY(-200px);
-    transition: all 0.5s;
 }
 .modal.active{
     background: rgba(0,0,0,0.6);
     z-index: 0;
 }
 .modal.active .card{
-    transform: translateY(0);
+    animation: modal_animation 0.5s;
+}
+@keyframes modal_animation  {
+  from {transform: translateY(-200px);}
+  to {transform: translateY(0);}
 }
 .modal .card .fields{
     display: grid;
