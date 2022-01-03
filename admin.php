@@ -12,7 +12,9 @@
                 <div><a href="?page=mng_users&type=all">Todos</a></div>
             </div>
         </div>
-        <div>Gestionar Temas</div>
+        <div class="<?=checked("mng_themes")?>">
+            <a href="?page=mng_themes">Gestionar Temas</a>
+        </div>
         <div class="<?=checked("u_user")?>">
             <a href="?page=u_user">Actualización de perfil</a>
         </div>

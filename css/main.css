@@ -123,11 +123,11 @@
     text-align: center;
     box-shadow: 0 0 0 1px inset;
 }
-.main .material a{
+.main .material .download a{
     color: darkblue;
     font-weight: bold;
 }
-.main .material a::after{
+.main .material .download a::after{
     content: "🡇";
     color: var(--azul-hover);
     display: inline-block;
@@ -138,7 +138,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 2px inset var(--azul), 0 0 0 1px white, 0 0 0 3px var(--azul);
 }
-.main .material a:hover::after{
+.main .material .download a:hover::after{
     color: white;
     background: var(--azul-hover);
     box-shadow: 0 0 0 2px inset white, 0 0 0 1px var(--azul), 0 0 0 3px white;
@@ -267,4 +267,45 @@ div.main .manage_users{
 }
 .main .u_user .hidden{
     display: none;
+}
+.main .manage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .manage .material{
+    position: relative;
+}
+.main .manage .options{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    font-size: 15px;
+}
+.main .manage .options a{
+    margin: 0 8px;
+    display: block;
+    text-decoration: none;
+    line-height: 24px;
+    background: white;
+    color: darkred;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px inset;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.main .manage .options a:first-child{
+    color: darkgreen;
+}
+.main .manage .options a:hover{
+    background: darkred;
+    color: white;
+    transform: scale(1.5);
+}
+.main .manage .options a:first-child:hover{
+    background: darkgreen;
 }

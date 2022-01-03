@@ -15,7 +15,7 @@
     }
     switch ($_SESSION['user']) {
         case "admin":
-            $allowed_pages = array("mng_users","u_user");
+            $allowed_pages = array("mng_users","u_user","mng_themes");
             require_once "admin.php";
             break;
         case "docente":
