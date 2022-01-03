@@ -122,4 +122,5 @@ if($action == "delete") {
     <div class="footer_">
         <input type="button" onclick="window.print()" value="Imprimir"/>
     </div>
+    <?php require_once "includes/modal_editor.php";?>
 </div>
