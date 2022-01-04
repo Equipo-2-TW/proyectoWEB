@@ -84,4 +84,5 @@
         }
         ?>
     </div>
+    <?php require_once "includes/modal_themes.php";?>
 </div>
