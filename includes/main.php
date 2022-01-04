@@ -1,5 +1,6 @@
 <div class="main">
     <?php
+        $user = $_SESSION['user'];
         $page = $_GET['page'];
         if (in_array($page, $allowed_pages))
             switch ($page) {
@@ -12,6 +13,9 @@
                 case "u_user":     require_once "includes/u_user.php";        break;
                 case "help":       require_once "includes/help.php";        break;
             }
-        else if (!isset($_SESSION['user'])) require_once "includes/welcome.php";
+        else if (!isset($user))    require_once "includes/welcome.php";
+        else if ($user=="admin")   header("Location: index.php?page=mng_users&type=all");
+        else if ($user=="docente") header("Location: index.php?page=mng_themes");
+        else if ($user=="alumno")  header("Location: index.php?page=materials&type=video");
     ?>
 </div>
