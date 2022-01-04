@@ -14,7 +14,7 @@
                 <label for="name">Nombre:</label>
                 <input type="text" name="name" id="name" pattern="[A-Za-z ]+" maxlength="50" required/>
                 <label for="group" id="groupl">Grupo:</label>
-                <input type="text" name="group" id="group" required/>
+                <input type="text" name="group" id="group"/>
                 <select name="group_list" id="group_list">
                     <?php
                     $query = "SELECT * FROM docente";
