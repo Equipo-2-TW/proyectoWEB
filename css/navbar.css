@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2px 0 2px 0;
+    z-index: 1;
 }
 .navegacion>div{
     background: var(--cafe-claro);

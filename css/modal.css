@@ -17,7 +17,7 @@
 }
 .modal.active{
     background: rgba(0,0,0,0.6);
-    z-index: 0;
+    z-index: 1;
 }
 .modal.active .card{
     animation: modal_animation 0.5s;
@@ -54,6 +54,6 @@
 .modal .admin,.modal .hidden{
     display: none;
 }
-.modal #group_list{
+.modal #group_list,.modal #type{
     font-size: 18px;
 }

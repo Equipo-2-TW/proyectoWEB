@@ -19,13 +19,13 @@ function is_select($type_) {
             <div id="title">Editar</div>
             <div class="fields">
                 <input name="id" class="hidden" value="<?=$id?>"/>
-                <label for="name_">Bloque:</label>
-                <input type="text" name="name" id="name_" value="<?=$unit?>"/>
-                <label for="email_">Tema:</label>
-                <input type="text" name="email" id="email_" value="<?=$topic?>"/>
-                <label for="email2_">Subtema:</label>
-                <input type="text" name="email2" id="email2_" value="<?=$subtopic?>"/>
-                <label for="phone_">Tipo de material:</label>
+                <label for="unit">Bloque:</label>
+                <input type="text" name="unit" id="unit" value="<?=$unit?>"/>
+                <label for="topic">Tema:</label>
+                <input type="text" name="topic" id="topic" value="<?=$topic?>"/>
+                <label for="subtopic">Subtema:</label>
+                <input type="text" name="subtopic" id="subtopic" value="<?=$subtopic?>"/>
+                <label for="type">Tipo de material:</label>
                 <select name="type" id="type">
                     <option value="video" <?=is_select("video")?>>Video</option>
                     <option value="material" <?=is_select("material")?>>Material</option>
@@ -33,7 +33,7 @@ function is_select($type_) {
                     <option value="actividad" <?=is_select("actividad")?>>Actividad</option>
                     <option value="examen" <?=is_select("examen")?>>Examen</option>
                 </select>
-                <input type="submit" name="upload" value="Enviar"/>
+                <input type="submit" name="update_mat_info" value="Enviar"/>
             </div>
         </form>
     </div>

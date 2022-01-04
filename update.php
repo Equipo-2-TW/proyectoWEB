@@ -34,4 +34,16 @@ if (isset($_POST["update"]) || isset($_POST["update_profile"])) {
             header("Location: index.php?page=mng_users&type=$type");
     }
 }
+if (isset($_POST["update_mat_info"])) {
+    $id       = $_POST["id"];
+    $unit     = $_POST["unit"];
+    $topic    = $_POST["topic"];
+    $subtopic = $_POST["subtopic"];
+    $type     = $_POST["type"];
+    $query = "UPDATE material SET mat_bloque = '$unit', mat_tema = '$topic', mat_subtema = '$subtopic', mat_tipomaterial = '$type'";
+    $query .= " WHERE mat_id = '$id'";
+    $result = mysqli_query($conn, $query);
+    if (!$result) die("Query Failed");
+    header("Location: index.php?page=mng_themes");
+}
 ?>
