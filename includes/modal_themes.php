@@ -20,11 +20,11 @@ function is_select($type_) {
             <div class="fields">
                 <input name="id" class="hidden" value="<?=$id?>"/>
                 <label for="unit">Bloque:</label>
-                <input type="text" name="unit" id="unit" value="<?=$unit?>"/>
+                <input type="text" name="unit" id="unit" value="<?=$unit?>" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="topic">Tema:</label>
-                <input type="text" name="topic" id="topic" value="<?=$topic?>"/>
+                <input type="text" name="topic" id="topic" value="<?=$topic?>" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="subtopic">Subtema:</label>
-                <input type="text" name="subtopic" id="subtopic" value="<?=$subtopic?>"/>
+                <input type="text" name="subtopic" id="subtopic" value="<?=$subtopic?>" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="type">Tipo de material:</label>
                 <select name="type" id="type">
                     <option value="video" <?=is_select("video")?>>Video</option>

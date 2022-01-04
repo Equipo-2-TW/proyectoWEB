@@ -26,11 +26,11 @@
             <form method="post" action="upload.php" enctype="multipart/form-data">
                 <input name="group" class="hidden" value="<?=$group?>"/>
                 <label for="unit">Bloque:</label>
-                <input type="text" name="unit" id="unit"/>
+                <input type="text" name="unit" id="unit" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="topic">Tema:</label>
-                <input type="text" name="topic" id="topic"/>
+                <input type="text" name="topic" id="topic" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="subtopic">Subtema:</label>
-                <input type="text" name="subtopic" id="subtopic"/>
+                <input type="text" name="subtopic" id="subtopic" pattern="[A-Za-z ]+" maxlength="40" required/>
                 <label for="type">Tipo de material:</label>
                 <select name="type" id="type">
                     <option value="video">Video</option>

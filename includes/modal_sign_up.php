@@ -10,11 +10,11 @@
             </div>
             <div class="fields">
                 <label for="id" id="idl">Numero de empleado:</label>
-                <input type="text" name="id" id="id"/>
+                <input type="text" name="id" id="id" pattern="[0-9]+" maxlength="11" required/>
                 <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" name="name" id="name" pattern="[A-Za-z ]+" maxlength="50" required/>
                 <label for="group" id="groupl">Grupo:</label>
-                <input type="text" name="group" id="group"/>
+                <input type="text" name="group" id="group" required/>
                 <select name="group_list" id="group_list">
                     <?php
                     $query = "SELECT * FROM docente";
@@ -31,13 +31,13 @@
                     ?>
                 </select>
                 <label for="email">Correo Principal:</label>
-                <input type="text" name="email" id="email"/>
+                <input type="text" name="email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" maxlength="35" required/>
                 <label for="email2">Correo Alternativo:</label>
-                <input type="text" name="email2" id="email2"/>
+                <input type="text" name="email2" id="email2" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" maxlength="35" required/>
                 <label for="phone">Telefono:</label>
-                <input type="text" name="phone" id="phone"/>
+                <input type="text" name="phone" id="phone" pattern="[0-9]+" maxlength="11" required/>
                 <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="password"/>
+                <input type="password" name="password" id="password" pattern="[A-Za-z\d@$!%*#?&]+" maxlength="8" required/>
                 <input type="submit" name="sign_up" value="ENVIAR"/>
             </div>
         </form>

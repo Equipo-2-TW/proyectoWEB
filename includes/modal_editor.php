@@ -52,15 +52,15 @@ if($action == "edit") {
                 <label for="id_">Numero de empleado:</label>
                 <input type="text" name="id" id="id_" value="<?=$id?>" readonly/>
                 <label for="name_">Nombre:</label>
-                <input type="text" name="name" id="name_" value="<?=$name?>"/>
+                <input type="text" name="name" id="name_" value="<?=$name?>" pattern="[A-Za-z ]+" maxlength="50" required/>
                 <label for="email_">Correo Principal:</label>
-                <input type="text" name="email" id="email_" value="<?=$email?>"/>
+                <input type="text" name="email" id="email_" value="<?=$email?>" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" maxlength="35" required/>
                 <label for="email2_">Correo Alternativo:</label>
-                <input type="text" name="email2" id="email2_" value="<?=$email2?>"/>
+                <input type="text" name="email2" id="email2_" value="<?=$email2?>" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" maxlength="35" required/>
                 <label for="phone_">Telefono:</label>
-                <input type="text" name="phone" id="phone_" value="<?=$phone?>"/>
+                <input type="text" name="phone" id="phone_" value="<?=$phone?>" pattern="[0-9]+" maxlength="11" required/>
                 <label for="password_">Contraseña:</label>
-                <input type="password" name="password" id="password_" value="<?=$pwd?>"/>
+                <input type="password" name="password" id="password_" value="<?=$pwd?>" pattern="[A-Za-z\d@$!%*#?&]+" maxlength="8" required/>
                 <input type="submit" name="update" value="ENVIAR"/>
             </div>
         </form>
