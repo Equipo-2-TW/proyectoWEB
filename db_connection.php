@@ -12,5 +12,6 @@ $conn = mysqli_connect(
 );
 
 error_reporting (E_ALL ^ E_NOTICE);
+error_reporting (0);
 
 ?>
