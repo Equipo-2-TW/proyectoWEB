@@ -33,11 +33,15 @@
     box-shadow: 0 0 0 1px;
     margin-bottom: 30px;
 }
-.main .info .title{
+.main .info :is(.title,.subtitle){
     text-align: center;
     padding-bottom: 15px;
     font-size: 25px;
     font-weight: bold;
+}
+.main .info .subtitle{
+    margin-top: 20px;
+    font-size: 20px;
 }
 .main .info .description.center{
     display: flex;

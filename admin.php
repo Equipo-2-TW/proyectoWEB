@@ -20,7 +20,9 @@
         </div>
         <div>Contraseña</div>
         <div>Estadística</div>
-        <div>Ayuda</div>
+        <div class=<?=checked("help")?>>
+            <a href="?page=help">Ayuda</a>
+        </div>
     </div>
 </div> <!-- close header -->
 <div class="content">

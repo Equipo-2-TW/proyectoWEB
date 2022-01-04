@@ -15,7 +15,9 @@
         <div class=<?=checked("contact")?>>
             <a href="?page=contact">Contacto</a>
         </div>
-        <div class="">Ayuda</div>
+        <div class=<?=checked("help")?>>
+            <a href="?page=help">Ayuda</a>
+        </div>
     </div>
 </div> <!-- close header -->
 <div class="content">
