@@ -21,12 +21,18 @@ body{
 .top{
     display: flex;
     align-items: center;
+    height: 43px;
 }
 .logo{
     background: var(--azul-claro);
     color: black;
-    padding: 10px;
-    box-shadow: 0 0 0 4px inset var(--azul);
+    padding: 0 10px;
+    height: 48px;
+    margin-left: 10px;
+}
+.logo img{
+    height: 100%;
+    overflow: hidden;
 }
 .titulo{
     padding-left: 20px;

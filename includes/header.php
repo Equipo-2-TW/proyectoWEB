@@ -17,9 +17,9 @@
     <div class="header">
         <div class="top">
             <div class="logo">
-                logo
+                <img src="logo.gif" alt="logo"/>
             </div>
             <div class="titulo">
-                titulo del proyecto
+                Aprendiendo juntos
             </div>
         </div>
