@@ -148,6 +148,7 @@
     box-shadow: 0 0 0 2px inset white, 0 0 0 1px var(--azul), 0 0 0 3px white;
 }
 div.main .manage_users{
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -177,6 +178,9 @@ div.main .manage_users{
     display: grid;
     grid-template-columns: repeat(8,1fr);
 }
+.main .manage_users .table.students{
+    grid-template-columns: repeat(6,1fr);
+}
 .main .manage_users .table>div{
     box-shadow: 0 0 0 1px inset #333;
     text-align: center;
@@ -190,6 +194,16 @@ div.main .manage_users{
     background: #CDCDCD;
 }
 .main .manage_users .table>div:nth-child(-n+8){
+    background: var(--azul-claro);
+    font-weight: bold;
+}
+.main .manage_users .table.students>div{
+    background: white;
+}
+.main .manage_users .table.students>div:is(:nth-child(12n+6),:nth-child(12n+5),:nth-child(12n+4),:nth-child(12n+3),:nth-child(12n+2),:nth-child(12n+1)){
+    background: #CDCDCD;
+}
+.main .manage_users .table.students>div:nth-child(-n+6){
     background: var(--azul-claro);
     font-weight: bold;
 }
@@ -231,8 +245,14 @@ div.main .manage_users{
     .main .manage_users .table{
         transform: translateX(25px);
     }
+    .main .manage_users .table.students{
+        transform: translateX(0);
+    }
     .main .manage_users .table>div:nth-child(8n){
         visibility: hidden;
+    }
+    .main .manage_users .table.students>div{
+        visibility: visible;
     }
 }
 .main .table .options a{

@@ -3,12 +3,8 @@
     require_once "includes/header.php";
 ?>
     <div class="navegacion">
-        <div>
-            Gestionar
-            <div class="subtemas">
-                <div>Grupo</div>
-                <div>Alumno</div>
-            </div>
+        <div class=<?=checked("students")?>>
+            <a href="?page=students">Alumno</a>
         </div>
         <div class=<?=checked("mng_themes")?>>
             <a href="?page=mng_themes">Gestionar Temas</a>

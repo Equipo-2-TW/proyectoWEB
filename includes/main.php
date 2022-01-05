@@ -11,7 +11,8 @@
                 case "materials":  require_once "includes/materials.php";     break;
                 case "mng_users":  require_once "includes/manage_users.php";  break;
                 case "u_user":     require_once "includes/u_user.php";        break;
-                case "help":       require_once "includes/help.php";        break;
+                case "help":       require_once "includes/help.php";          break;
+                case "students":   require_once "includes/students.php";      break;
             }
         else if (!isset($user))    require_once "includes/welcome.php";
         else if ($user=="admin")   header("Location: index.php?page=mng_users&type=all");

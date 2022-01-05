@@ -19,7 +19,7 @@
             require_once "admin.php";
             break;
         case "docente":
-            $allowed_pages = array("mng_themes","u_user","help");
+            $allowed_pages = array("mng_themes","u_user","help","students");
             require_once "educator.php";
             break;
         case "alumno":
